@@ -39,9 +39,9 @@ dependencies {
 publishing {
   publications {
     create<MavenPublication>("maven") {
-      groupId = "github.robotters.commonlib"
+      groupId = "github.robotters"
       version = System.getenv("VERSION")
-
+      artifactId = "commonlib"
       from(components["java"])
     }
   }
