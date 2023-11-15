@@ -40,7 +40,7 @@ publishing {
   publications {
     create<MavenPublication>("maven") {
       groupId = "github.robotters.commonlib"
-      version = libVersion
+      version = System.getenv("VERSION")
 
       from(components["java"])
     }
